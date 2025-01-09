@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML FORM</title>
+</head>
+<body>
+    <h1>User Data Form</h1>
+    <section>
+        <form id="userForm">
+        <ul>
+                <label for="name"><b>Name</b></label>
+                <br>
+                <input type="text" id="name" name="user_name" placeholder="Write your name..."/>
+        </ul>
+        <ul>
+            <label for="mail"><b>Email</b></label>
+            <br>
+            <input type="email" id="mail" name="user_mail" placeholder="Write your email..."/>
+        </ul>
+        <ul>
+            <label for="age"><b>Age</b></label>
+            <br>
+            <input type="age" id="age" name="user_age" placeholder="Write your age..."/>
+        </ul>
+        <ul>
+            <label for="select"><b>Which best option describes you?</b></label>
+            <br>
+            <select id="select">
+                <option value="value1">Student</option>
+                <option value="value2">Worker</option>
+                <option value="value3">Unemployed</option>
+            </select>
+        </ul>
+        <ul>
+           <b>Would you recommend this site?</b>
+            <br>
+            <input type="radio" id="recommendYes" name="recommend" value="Yes">
+            <label for="recommendYes">Yes</label>
+            <br>
+            <input type="radio" id="recommendNo" name="recommend" value="No">
+            <label for="recommendNo">No</label>
+            <br>
+            <input type="radio" id="recommendMaybe" name="recommend" value="Maybe">
+            <label for="recommendMaybe">Maybe</label>
+        </ul>
+        <ul>
+            <b>Language and Frameworks known</b>
+            <br>
+            <input type="checkbox" id="Java" name="Java" value="Java">
+            <label for="Java">Java</label>
+            <br>
+            <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+            <label for="JavaScript">JavaScript</label>
+            <br>
+            <input type="checkbox" id="Python" name="Python" value="Python">
+            <label for="Python">Python</label>
+            <br>
+            <input type="checkbox" id="Spring" name="Spring" value="Spring">
+            <label for="Spring">Spring</label>
+            <br>
+            <input type="checkbox" id="Angular" name="Angular" value="Angular">
+            <label for="Angular">Angular</label>
+            <br>
+            <input type="checkbox" id="Django" name="Django" value="Django">
+            <label for="Django">Django</label>
+            <br>
+            <input type="checkbox" id="React" name="React" value="React">
+            <label for="React">React</label>
+        </ul>
+        <ul>
+            <label for="comments"><b>Comments and suggestions</b></label>
+            <br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write here any suggestion o comment..."></textarea>
+        </ul>
+
+        <button class="submitButton">Submit</button>
+    </form>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
