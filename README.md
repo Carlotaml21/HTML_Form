@@ -16,6 +16,8 @@ This project is a basic interactive form that collects user information and, upo
 - **Extra Feature**:
   Once the form is completed and submitted, the entered data is displayed in the browser console using JavaScript.
 
+## Git Hub Pages
+https://carlotaml21.github.io/HTML_Form/
 
 ## Requirements
 
