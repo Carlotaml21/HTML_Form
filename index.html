@@ -9,7 +9,7 @@
 <body>
     <h1>User Data Form</h1>
     <section>
-        <form action="/my-handling-form-page" method="post"></form>
+        <form id="userForm">
         <ul>
                 <label for="name"><b>Name</b></label>
                 <br>
@@ -28,37 +28,47 @@
         <ul>
             <label for="select"><b>Which best option describes you?</b></label>
             <br>
-            <select name="selector">
+            <select id="select">
                 <option value="value1">Student</option>
                 <option value="value2">Worker</option>
                 <option value="value3">Unemployed</option>
             </select>
         </ul>
         <ul>
-            <label for="radio"><b>Would you recommend this site?</b></label>
+           <b>Would you recommend this site?</b>
             <br>
-            <input type="radio" id="Button" name="button" value="Yes">Yes
+            <input type="radio" id="recommendYes" name="recommend" value="Yes">
+            <label for="recommendYes">Yes</label>
             <br>
-            <input type="radio" id="Button" name="button" value="No">No
+            <input type="radio" id="recommendNo" name="recommend" value="No">
+            <label for="recommendNo">No</label>
             <br>
-            <input type="radio" id="Button" name="button" value="Maybe">Maybe
+            <input type="radio" id="recommendMaybe" name="recommend" value="Maybe">
+            <label for="recommendMaybe">Maybe</label>
         </ul>
         <ul>
-            <label for="checkbox"><b>Language and Frameworks known</b></label>
+            <b>Language and Frameworks known</b>
             <br>
-            <input type="checkbox" id="Java" name="Java" value="Java">Java
+            <input type="checkbox" id="Java" name="Java" value="Java">
+            <label for="Java">Java</label>
             <br>
-            <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">JavaScript
+            <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+            <label for="JavaScript">JavaScript</label>
             <br>
-            <input type="checkbox" id="Python" name="Python" value="Python">Phyton
+            <input type="checkbox" id="Python" name="Python" value="Python">
+            <label for="Python">Python</label>
             <br>
-            <input type="checkbox" id="Spring" name="Spring" value="Spring">Spring
+            <input type="checkbox" id="Spring" name="Spring" value="Spring">
+            <label for="Spring">Spring</label>
             <br>
-            <input type="checkbox" id="Angular" name="Angular" value="Angular">Angular
+            <input type="checkbox" id="Angular" name="Angular" value="Angular">
+            <label for="Angular">Angular</label>
             <br>
-            <input type="checkbox" id="Django" name="Django" value="Django">Django
+            <input type="checkbox" id="Django" name="Django" value="Django">
+            <label for="Django">Django</label>
             <br>
-            <input type="checkbox" id="React" name="React" value="React">React
+            <input type="checkbox" id="React" name="React" value="React">
+            <label for="React">React</label>
         </ul>
         <ul>
             <label for="comments"><b>Comments and suggestions</b></label>
@@ -67,6 +77,10 @@
         </ul>
 
         <button class="submitButton">Submit</button>
+    </form>
     </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
