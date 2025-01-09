@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML FORM</title>
+</head>
+<body>
+    <h1>User Data Form</h1>
+    <section>
+        <form action="/my-handling-form-page" method="post"></form>
+        <ul>
+                <label for="name"><b>Name</b></label>
+                <br>
+                <input type="text" id="name" name="user_name" placeholder="Write your name..."/>
+        </ul>
+        <ul>
+            <label for="mail"><b>Email</b></label>
+            <br>
+            <input type="email" id="mail" name="user_mail" placeholder="Write your email..."/>
+        </ul>
+        <ul>
+            <label for="age"><b>Age</b></label>
+            <br>
+            <input type="age" id="age" name="user_age" placeholder="Write your age..."/>
+        </ul>
+        <ul>
+            <label for="select"><b>Which best option describes you?</b></label>
+            <br>
+            <select name="selector">
+                <option value="value1">Student</option>
+                <option value="value2">Worker</option>
+                <option value="value3">Unemployed</option>
+            </select>
+        </ul>
+        <ul>
+            <label for="radio"><b>Would you recommend this site?</b></label>
+            <br>
+            <input type="radio" id="Button" name="button" value="Yes">Yes
+            <br>
+            <input type="radio" id="Button" name="button" value="No">No
+            <br>
+            <input type="radio" id="Button" name="button" value="Maybe">Maybe
+        </ul>
+        <ul>
+            <label for="checkbox"><b>Language and Frameworks known</b></label>
+            <br>
+            <input type="checkbox" id="Java" name="Java" value="Java">Java
+            <br>
+            <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">JavaScript
+            <br>
+            <input type="checkbox" id="Python" name="Python" value="Python">Phyton
+            <br>
+            <input type="checkbox" id="Spring" name="Spring" value="Spring">Spring
+            <br>
+            <input type="checkbox" id="Angular" name="Angular" value="Angular">Angular
+            <br>
+            <input type="checkbox" id="Django" name="Django" value="Django">Django
+            <br>
+            <input type="checkbox" id="React" name="React" value="React">React
+        </ul>
+        <ul>
+            <label for="comments"><b>Comments and suggestions</b></label>
+            <br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write here any suggestion o comment..."></textarea>
+        </ul>
+
+        <button class="submitButton">Submit</button>
+    </section>
+</body>
+</html>
